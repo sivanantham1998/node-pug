@@ -1,0 +1,25 @@
+html 
+head 
+title Welcome to Pug 
+body 
+h1 Welcome to PUG file
+
+
+if a.length<=0
+  p No data found
+else
+  ul 
+    each arr in a
+        li=arr
+h1 DatawasThere
+
+form(action="/" ,method="post") 
+    input(type="text", name="uname" ,placeholder="Enter ur Name")
+    input(type="submit")
+
+if b.length<=0
+    h1 No data Found
+else 
+    ul 
+    each ar in b
+        li=ar
